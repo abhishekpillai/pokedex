@@ -7,8 +7,12 @@ import useRelay from 'react-router-relay'
 import './index.css'
 
 Relay.injectNetworkLayer(
-  new Relay.DefaultNetworkLayer('https://api.graph.cool/relay/v1/ciurerp1e0aza0158r4cleqkg')
+  new Relay.DefaultNetworkLayer(
+    'https://api.graph.cool/relay/v1/ciurerp1e0aza0158r4cleqkg'
+  )
 )
+
+const ViewerQueries = { viewer: () => Relay.QL`query { viewer }` }
 
 ReactDOM.render(
   <Router
