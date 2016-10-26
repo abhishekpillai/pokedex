@@ -7,7 +7,7 @@ import useRelay from 'react-router-relay'
 import './index.css'
 
 Relay.injectNetworkLayer(
-  new Relay.DefaultNetworkLayer('https://api.graph.cool/relay/v1/__PROJECT_ID__')
+  new Relay.DefaultNetworkLayer('https://api.graph.cool/relay/v1/ciurerp1e0aza0158r4cleqkg')
 )
 
 ReactDOM.render(
